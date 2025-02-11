@@ -1,0 +1,37 @@
+body {
+    font-family: Poppins;
+    font-weight: 500;
+}
+h1{
+    font-size: clamp(30px, 5vw + 1rem, 55px);
+}
+h1, h2 {
+    text-align: center;
+}
+h2 {
+    background-color: rgba(0, 0, 0, 0.856);
+    color: white;
+    padding: 1%;
+}
+h3 {
+    font-size: clamp(15px, 5vw + 1rem, 25px);
+}
+.img_container {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+}
+img {
+    border-radius: 10px;
+}
+ul, ol {
+    line-height: 200%;
+    font-weight: 400;
+}
+ol > li::marker {
+    font-weight: bold;
+}
+.Nutrition_info {
+    text-align: center;
+    font-size: clamp(10px, 5vw + 1rem, 20px);
+}
