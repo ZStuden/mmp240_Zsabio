@@ -1,20 +1,37 @@
 body {
     font-family: Poppins;
     font-weight: 500;
+    color: rgb(44, 44, 44);
+    background-color: rgb(138, 138, 138);
+    background-image: url("images/background.png");
+	background-color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+	z-index: 1;
+    padding: 0%;
+    margin: 0%;
 }
 h1{
     font-size: clamp(30px, 5vw + 1rem, 55px);
+    background-color: rgba(65, 3, 3, 0.822);
+    color: white;
+    padding: 1%;
+    border-radius: 3px;
 }
 h1, h2 {
     text-align: center;
 }
 h2 {
-    background-color: rgba(0, 0, 0, 0.856);
+    background-color: rgba(65, 3, 3, 0.822);
     color: white;
     padding: 1%;
+    border-radius: 3px;
 }
 h3 {
-    font-size: clamp(15px, 5vw + 1rem, 25px);
+    font-size: clamp(15px, 5vw + 1rem, 35px);
 }
 .img_container {
     display: flex;
@@ -23,15 +40,38 @@ h3 {
 }
 img {
     border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
 }
 ul, ol {
     line-height: 200%;
     font-weight: 400;
+    width: 95%;
 }
 ol > li::marker {
     font-weight: bold;
+    font-size: clamp(10px, 5vw + 1rem, 21px);
+
 }
-.Nutrition_info {
-    text-align: center;
+li {
+    margin-left: 1%;
+    padding-left: .5%;
+}
+.Nutrition_info_list {
+    display: flex;
+    justify-content: space-between;
     font-size: clamp(10px, 5vw + 1rem, 20px);
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.Nutrition_info_list ul {
+    color: white;
+    background-color: rgb(37, 37, 37);
+    padding: 1%;
+    border-radius: 55px;
+    font-weight: 500;
+    border: 2px;
+    border-style: solid;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    margin: 1%;
+
 }
