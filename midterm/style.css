@@ -60,8 +60,6 @@ li a {
 }
 
 .title{
-    font-size: xx-large;
-    font-weight: 700;
     display: flex;
     align-items: center;
     flex-direction: column;
