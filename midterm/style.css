@@ -1,0 +1,85 @@
+body {
+    color: rgb(255, 255, 255);
+    background: 
+    linear-gradient(180deg, #4E94CD 0%, rgba(39, 74, 103, 0.00) 60%);
+    background-color: rgb(34, 34, 34);
+    font-family: Manrope;
+    margin: 0%
+}
+
+.banner {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#wrapper {
+    width: 1440px;
+    height: 1024px;
+    margin: 0% auto;
+}
+
+header {
+    margin: 0%;
+    padding: 1em;
+    padding-top: 9em;
+    padding-bottom: 9em;
+    padding-left: 8em;
+    background:
+    linear-gradient(90deg, #000 0%, #0F0F0F 51%, rgba(0, 0, 0, 0.00) 80%),
+    url("images/GY3VKX1MR-backdrop_wide 1.jpg");
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.play_button_container {
+    display: flex;
+    justify-content: center;
+}
+
+.play_button {
+    text-decoration: none;
+    color: inherit;
+    font-size: xx-large;
+
+}
+
+.nav_links {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+.title{
+    font-size: xx-large;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.desc {
+    display: flex;
+    justify-content: left;
+    width: 20%;
+}
+
+.tags {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
