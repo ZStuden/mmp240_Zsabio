@@ -47,11 +47,27 @@ header {
 .nav_links {
     display: flex;
     justify-content: center;
+    padding: 40px 0px 40px 0px;
+}
+
+.nav_links a {
+    color: #000;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-align: center;
+    background: url("rectangle1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 20px;
+    padding: 20px 30px 20px 30px;
 }
 
 li {
     text-decoration: none;
     list-style-type: none;
+    margin-bottom: 30px;
+    font-weight: 300;
 }
 
 li a {
@@ -59,16 +75,46 @@ li a {
     text-decoration: none;
 }
 
-.title{
+li strong {
+    font-weight: 800;
+}
+
+.content_wrapper {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title{
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.title p {
+    margin: 0px;
+}
+
+.title_under {
+    font-size: .5em;
+    font-weight: 200;
+}
+
+.title_under p {
+    margin-top: 5px;
+}
+
+.desc_wrapper {
+    display: flex;
+    justify-content: flex-start; 
+    width: 25%;
 }
 
 .desc {
-    display: flex;
-    justify-content: left;
-    width: 20%;
+    font-size: 1.25em;
+    width: 100%;
+    text-align: left;
 }
 
 .tags {
@@ -77,7 +123,19 @@ li a {
     flex-direction: column;
 }
 
-.bottom {
-    display: flex;
-    justify-content: space-between;
+.play_button {
+    background-color: #00000060;
+    padding: 5px 60px 5px 60px;
+    border-radius: 15px;
+    border-style: solid;
+    color: #ffffffb7;
+}
+
+.play_button {
+    font-size: 2.7em;
+    font-weight: 800;
+}
+
+.play_button_container {
+    padding-bottom: 30px;
 }
