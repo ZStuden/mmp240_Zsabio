@@ -138,8 +138,14 @@ li strong {
 }
 
 .play_button_container {
+    display: flex;
     padding-bottom: 30px;
 }
+
+.play_button_symbol {
+
+}
+
 footer p {
     font-weight: 100;
     text-align: left;
