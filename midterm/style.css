@@ -143,4 +143,6 @@ li strong {
 footer p {
     font-weight: 100;
     text-align: left;
+    padding-left: 10px;
+    padding-top: 30px;
 }
