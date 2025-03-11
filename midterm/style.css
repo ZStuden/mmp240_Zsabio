@@ -1,7 +1,7 @@
 body {
     color: rgb(255, 255, 255);
     background: 
-    linear-gradient(180deg, #4E94CD 0%, rgba(39, 74, 103, 0.00) 60%);
+    linear-gradient(180deg, #4E94CD 0%, rgba(39, 74, 103, 0.00) 80%);
     background-color: rgb(34, 34, 34);
     font-family: Manrope;
     margin: 0%
@@ -14,7 +14,7 @@ body {
 
 #wrapper {
     width: 1440px;
-    height: 1024px;
+    height: fit-content;
     margin: 0% auto;
 }
 
@@ -90,6 +90,7 @@ li strong {
     font-size: 2.5em;
     font-weight: 700;
     text-align: center;
+    text-shadow: 1px 1px 0px #444;
 }
 
 .title p {
@@ -138,4 +139,8 @@ li strong {
 
 .play_button_container {
     padding-bottom: 30px;
+}
+footer p {
+    font-weight: 100;
+    text-align: left;
 }
