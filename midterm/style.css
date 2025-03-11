@@ -15,7 +15,8 @@ body {
 #wrapper {
     width: 1440px;
     height: fit-content;
-    margin: 0% auto;
+    margin: 0 auto;
+    padding: 10px;
 }
 
 header {
@@ -90,6 +91,9 @@ li strong {
     font-size: 2.5em;
     font-weight: 700;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     text-shadow: 1px 1px 0px #444;
 }
 
@@ -110,10 +114,12 @@ li strong {
     display: flex;
     justify-content: flex-start; 
     width: 25%;
+    flex: .5;
 }
 
 .desc {
     font-size: 1.25em;
+    font-weight: 400;
     width: 100%;
     text-align: left;
 }
@@ -122,11 +128,12 @@ li strong {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
+    flex: .5;
 }
 
 .play_button {
     font-size: 2.7em;
-    font-weight: 800;
+    font-weight: 900;
 }
 
 .play_button_container {
@@ -147,4 +154,13 @@ footer p {
     text-align: left;
     padding-left: 10px;
     padding-top: 30px;
+}
+
+.episode_title {
+    text-align: center;
+}
+
+.episode_title p {
+    font-size: 2.5em;
+    font-weight: 700;
 }
