@@ -244,3 +244,30 @@ footer p {
     font-size: 2.5em;
     font-weight: 700;
 }
+
+.release_info {
+    text-align: center;
+    font-size: 1.25em;
+}
+
+.epi_card {
+    background: url(epi_card.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 292px;
+    width: 20%;
+    padding: 15px;
+}
+
+.ep_img {
+    text-align: center;
+}
+
+.ep_title {
+    text-align: center;
+    font-weight: 600;
+}
+
+.epi_card p {
+    color: #000;
+}
