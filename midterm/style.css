@@ -254,9 +254,9 @@ footer p {
     background: url(epi_card.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 292px;
+    background-size: fit-content;
     width: 20%;
-    padding: 15px;
+    padding: 35px;
 }
 
 .ep_img {
@@ -270,4 +270,11 @@ footer p {
 
 .epi_card p {
     color: #000;
+    font-size: .9em;
+    padding-left: 9px;
+}
+
+.epi_number {
+    font-weight: 700;
+    padding-left: 9px;
 }
