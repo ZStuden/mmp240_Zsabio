@@ -1,7 +1,16 @@
-body {
+.home {
     color: rgb(255, 255, 255);
     background:
-        linear-gradient(180deg, #4E94CD 0%, rgba(39, 74, 103, 0.00) 80%);
+        linear-gradient(180deg, #4E94CD 0%, #274a6700 80%);
+    background-color: rgb(34, 34, 34);
+    font-family: Manrope;
+    margin: 0%
+}
+
+.ep_page {
+    color: rgb(255, 255, 255);
+    background:
+        linear-gradient(180deg, rgba(78,148,205,1) 0%, rgba(78,148,205,0) 30%, rgba(78,148,205,0.6250875350140056) 130%);
     background-color: rgb(34, 34, 34);
     font-family: Manrope;
     margin: 0%
@@ -267,6 +276,7 @@ footer p {
 
 .ep_img {
     text-align: center;
+    width: 100%;
 }
 
 .ep_title {
