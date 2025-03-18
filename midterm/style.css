@@ -181,7 +181,7 @@ li strong {
     flex-direction: column;
     flex: .85;
     text-shadow: 1px 1px 0px #444;
-    padding: 15px;
+    padding: 0px 10px 35px 0px;
 }
 
 .title p {
