@@ -50,7 +50,7 @@ header {
 
 .nav_links {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     padding: 30px 0px;
 }
 
@@ -117,7 +117,7 @@ header {
     background-size: 40px;
     background-position: center;
     padding: 20px 50px;
-    margin: 0;
+    margin-right: 50px;
     width: 100%;
 }
 
@@ -132,7 +132,7 @@ header {
     background-repeat: no-repeat;
     background-size: 40px;
     background-position: center;
-    padding: 20px 50px;
+    padding: 20px 30px;
     margin: 0;
     width: 100%; 
 }
@@ -161,7 +161,7 @@ li strong {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .title {
@@ -250,11 +250,17 @@ footer p {
     font-size: 1.25em;
 }
 
+.episodes_cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .epi_card {
     background: url(epi_card.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: fit-content;
     width: 20%;
     padding: 35px;
 }
