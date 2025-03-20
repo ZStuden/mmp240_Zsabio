@@ -23,6 +23,7 @@ li a {
     text-decoration: none;
 }
 li a:hover {
+    color: gray;
     text-decoration: underline;
-    transition: 1s;
+    transition: .2ms;
 }
