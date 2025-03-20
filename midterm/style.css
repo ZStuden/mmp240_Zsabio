@@ -13,7 +13,8 @@
         linear-gradient(180deg, rgba(78,148,205,1) 0%, rgba(78,148,205,0) 30%, rgba(78,148,205,0.6250875350140056) 130%);
     background-color: rgb(34, 34, 34);
     font-family: Manrope;
-    margin: 0%
+    margin: 0%;
+    padding-top: 15px;
 }
 
 .banner {
@@ -293,4 +294,33 @@ footer p {
 .epi_number {
     font-weight: 700;
     padding-left: 9px;
+}
+
+.back_link {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    background: #000000af;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 10px 90% 0px 10px; 
+}
+
+.back_link a {
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: white;
+    text-align: right;
+}
+
+.back_icon {
+    width: 20px;
+    padding: 10px 20px;
+}
+
+.back_link:hover {
+    background: #4E94CD;
+    transition: 1s;
 }
