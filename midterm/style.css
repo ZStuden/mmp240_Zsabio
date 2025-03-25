@@ -28,7 +28,7 @@
 }
 
 #wrapper {
-    width: 1440px;
+    max-width: 80%;
     height: fit-content;
     margin: 0 auto;
     padding: 10px;
@@ -46,6 +46,7 @@ header {
     background-position: right top;
     background-repeat: no-repeat;
     background-size: contain;
+    width: 98%;
 }
 
 .play_button_container {
@@ -273,8 +274,9 @@ footer p {
     background: url(epi_card.svg);
     background-repeat: no-repeat;
     background-position: center;
-    width: 20%;
-    padding: 35px;
+    width: 300px;
+    padding: 38px;
+    min-width: 20%;
 }
 
 .ep_img {
@@ -290,7 +292,8 @@ footer p {
 .epi_card p {
     color: #000;
     font-size: .9em;
-    padding-left: 9px;
+    padding: 2px 10px 9px 15px;
+    max-width: 100%;
 }
 
 .epi_number {
