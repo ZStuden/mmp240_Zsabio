@@ -4,7 +4,8 @@
         linear-gradient(180deg, #4E94CD 0%, #274a6700 80%);
     background-color: rgb(34, 34, 34);
     font-family: Manrope;
-    margin: 0%
+    margin: 0%;
+    max-width: 2000px;
 }
 
 .ep_page {
@@ -15,6 +16,7 @@
     font-family: Manrope;
     margin: 0%;
     padding-top: 15px;
+    max-width: 2000px;
 }
 
 .banner {
