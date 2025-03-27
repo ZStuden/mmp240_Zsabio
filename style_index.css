@@ -24,13 +24,14 @@ li {
     list-style: none;
     margin: 0%;
     display: inline;
-    padding: 1%;
+    padding: 2%;
     font-size: x-large;
     font-weight: 300;
 }
 li a {
     color: whitesmoke;
     text-decoration: none;
+    padding: 8px;
 }
 li a:hover {
     color: gray;
@@ -51,4 +52,9 @@ li a:hover {
 
 .index_img {
     width: 30%;
+}
+
+.work-links {
+    display: flex;
+    justify-content: center;
 }
