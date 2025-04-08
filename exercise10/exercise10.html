@@ -7,6 +7,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_drop_down" />
+
 
     <style>
 
@@ -24,13 +26,47 @@
         }
 
         nav li a {
+            font-weight: 600;
             display: block;
+            background-color: rgb(118, 184, 162);
             text-decoration: none;
-            color: black;
+            color: rgb(14, 75, 44);
+            padding: 0.5em 1em;
+            border-bottom: solid 2px white;
+        }
+
+        nav li li a {
+            background-color: rgba(49, 49, 92, 0.774);
+            color: white;
+            font-weight: 300;
+            font-size: .90em;
+        }
+
+        nav li li a:hover {
+            background-color: rgba(92, 92, 170, 0.836);
+            font-weight: 400;
+            font-size: .98em;
+            padding-left: 40px;
         }
 
         li {
             list-style-type: none;
+        }
+
+        li.dropdown ul {
+            display: none;
+        }
+
+        li.dropdown:hover ul {
+            display: block;
+        }
+
+        .material-symbols-outlined {
+            font-size: 40px;
+            color: white;
+            float: right;
+            padding-right: 20px;
+            padding-top: 10px;
         }
 
     </style>
@@ -39,19 +75,31 @@
     <nav>
         <ul>
             <li class="dropdown">
+
+                <span class="material-symbols-outlined">
+                    arrow_drop_down
+                </span>
+
                 <a href="#">Fruits</a>
+                
                 <ul>
-                    <li><a href="#"></a>Apple</li>
-                    <li><a href="#"></a>Oranges</li>
-                    <li><a href="#"></a>Pear</li>
+                    <li><a href="#">Apple</a></li>
+                    <li><a href="#">Oranges</a></li>
+                    <li><a href="#">Pear</a></li>
                 </ul>
             </li>
             <li class="dropdown">
+
+                <span class="material-symbols-outlined">
+                    arrow_drop_down
+                </span>
+
                 <a href="#">Vegetables</a>
+
                 <ul>
-                    <li><a href="#"></a>Cabbage</li>
-                    <li><a href="#"></a>potatoes</li>
-                    <li><a href="#"></a>sqaush</li>
+                    <li><a href="#">Cabbage</a></li>
+                    <li><a href="#">Potatoes</a></li>
+                    <li><a href="#">Sqaush</a></li>
                 </ul>
             </li>
         </ul>
