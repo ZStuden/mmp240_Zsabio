@@ -48,7 +48,8 @@ form {
 
 h2 {
     text-align: center;
-    padding-bottom: 40px;
+    margin: 0%;
+    padding-bottom: 65px;
 }
 
 .dropdown {
@@ -62,8 +63,11 @@ h2 {
 }
 
 .start-wrapper {
-    background-color: rgb(125, 168, 154);
-    padding: 90px;
+    background: url(images/Group2.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 50px;
     text-align: center;
 }
 
@@ -72,4 +76,15 @@ h2 {
     color: white;
     text-decoration: none;
     padding: 20px 70px;
+}
+
+.apply-link {
+    background-color: rgb(71, 71, 71);
+    color: white;
+    text-decoration: none;
+    padding: 10px 50px;
+}
+
+.queens-app p {
+    font-size: .9em;
 }
