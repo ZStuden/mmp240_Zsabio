@@ -1,3 +1,75 @@
 body {
     margin: 15px;
+    font-family: Manrope;
+}
+nav ul{
+    padding: 0%;
+}
+
+nav li a {
+    font-weight: 600;
+    display: block;
+    background-color: rgb(118, 184, 162);
+    text-decoration: none;
+    color: rgb(14, 75, 44);
+    padding: 0.5em 1em;
+    border-bottom: solid 2px white;
+    text-align: center;
+}
+
+nav li li a {
+    background-color: rgba(49, 49, 92, 0.774);
+    color: white;
+    font-weight: 300;
+    font-size: .90em;
+}
+
+nav li li a:hover {
+    background-color: rgba(92, 92, 170, 0.836);
+    font-weight: 400;
+    font-size: .98em;
+}
+
+li {
+    list-style-type: none;
+}
+
+li.dropdown ul {
+    display: none;
+}
+
+li.dropdown:hover ul {
+    display: block;
+}
+
+form {
+    padding: 10px 0px;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.dropdown {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.top-nav {
+    padding-bottom: 10px;
+}
+
+.start-wrapper {
+    background-color: rgb(125, 168, 154);
+    padding: 90px;
+    text-align: center;
+}
+
+.start-link {
+    background-color: rgb(71, 71, 71);
+    color: white;
+    text-decoration: none;
+    padding: 20px 70px;
 }
