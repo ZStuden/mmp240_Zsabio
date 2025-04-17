@@ -4,68 +4,94 @@ body {
     font-weight: 500;
     background-color: rgb(32, 32, 32);
     color: whitesmoke;
-    text-align: center;
-    margin: 0% auto;
+    margin: 15px;
+}
+
+nav {
+    padding: 0%;
+
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 1em;
+    background-color: rgb(39, 31, 82);
+    padding: 30px;
 }
 
 h2 {
     font-size: 2.5em;
 }
 
-.head_wrapper {
-    background-color: rgb(38, 38, 119);
-    padding: 30px;
+.head-wrapper {
+    text-align: center;
 }
 
-ul {
-    margin: 0%;
-    padding: 2%;
+body {
+    font-size: 1.5em;
+    font-family: Figtree;
 }
-li {
-    list-style: none;
-    margin: 0%;
-    display: inline;
-    padding: 2%;
-    font-size: 1.2em;
-    font-weight: 500;
+
+nav ul{
+    padding: 0%;
 }
-li a {
-    color: whitesmoke;
+
+nav li a {
+    font-weight: 600;
+    display: block;
+    background-color: rgb(118, 184, 162);
     text-decoration: none;
-    padding: 8px;
-}
-li a:hover {
-    color: gray;
-    text-decoration: underline;
-    transition: .2ms;
+    color: rgb(14, 75, 44);
+    padding: 0.5em 1em;
+    border-bottom: solid 2px rgb(32, 32, 32);
 }
 
-.wrapper {
-    display: flex;
-    align-items: center;
-    padding: 30px;
+nav li li a {
+    background-color: rgba(49, 49, 92, 0.774);
+    color: white;
+    font-weight: 300;
+    font-size: .90em;
 }
 
-.lorem_ipsum p {
-    width: 800px;
-    padding-left: 200px;
+nav li li a:hover {
+    background-color: rgba(92, 92, 170, 0.836);
+    font-weight: 400;
+    font-size: .98em;
+    padding-left: 40px;
 }
 
-.index_img {
-    width: 30%;
+li {
+    list-style-type: none;
 }
 
-.ex-links {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: rgb(38, 38, 119);
+li.dropdown ul {
+    display: none;
 }
 
-.quiz-links {
-    background-color: rgb(34, 110, 85);
+li.dropdown:hover ul {
+    display: block;
+}
+
+.material-symbols-outlined {
+    font-size: 40px;
+    color: white;
+    float: right;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+img {
+    width: 70%;
+}
+
+.layout {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 2%;
+    grid-column-gap: 1em; 
+}
+
+.text-wrapper {
+    padding-top: 200px;
+    padding-left: 50px;
 }
