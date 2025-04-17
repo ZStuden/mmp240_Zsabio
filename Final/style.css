@@ -1,6 +1,7 @@
 body {
-    margin: 15px;
+    margin: 15px 0px;
     font-family: Manrope;
+    padding: 0%;
 }
 nav ul{
     padding: 0%;
@@ -46,10 +47,18 @@ form {
     padding: 10px 0px;
 }
 
+.start-text {
+    margin: 0%;
+    color: #56744C;
+    font-size: 1.8em;
+    width: 50%;
+    text-align: left;
+    font-weight: 800;
+    padding-left: 15px;
+}
+
 h2 {
     text-align: center;
-    margin: 0%;
-    padding-bottom: 65px;
 }
 
 .dropdown {
@@ -63,19 +72,22 @@ h2 {
 }
 
 .start-wrapper {
-    background: url(images/Group2.svg);
+    background: url(images/Group3.svg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
-    padding: 50px;
+    padding: 50px 0px;
     text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .start-link {
-    background-color: rgb(71, 71, 71);
-    color: white;
+    color: inherit;
+    background: url(images/Rectangle4.svg);
+    background-position: center;
+    background-repeat: no-repeat;
     text-decoration: none;
-    padding: 20px 70px;
+    padding: 70px 100px;
 }
 
 .apply-link {
