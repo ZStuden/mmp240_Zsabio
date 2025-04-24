@@ -86,10 +86,9 @@ h2 {
     background: url(images/Group30.svg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto;
     width: 100%;
     padding: 50px 0px;
-    margin: 20px 0px;
+    margin: 20px -5px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -115,9 +114,10 @@ h2 {
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
-    background: url(images/Group29.svg);
+    background: url(images/Group8.svg);
     background-position: center;
     background-repeat: no-repeat;
+    width: 100%;
     padding: 30px 10px;
     margin: 0px -5px;
 }
