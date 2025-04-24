@@ -30,10 +30,12 @@ nav li a {
 }
 
 nav li li a {
-    background-color: rgba(49, 49, 92, 0.774);
+    background-color: rgba(49, 92, 74, 0.774);
     color: #ffff;
     font-weight: 300;
     font-size: .90em;
+    margin: 20px;
+    padding: 10px 20px;
 }
 
 nav li li a:hover {
@@ -118,7 +120,6 @@ h2 {
     background: url(images/Group8.svg);
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
     padding: 30px 10px;
     margin: 0px -5px;
 }
@@ -163,9 +164,32 @@ article h3 a {
     color: white;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1240px) {
     body {
         margin: 0%;
+        padding: 0%;
+    }
+    .burger-icon {
+        display: none;
+    }
+    li.dropdown ul {
+        display: block;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: -22px 0px;
+    }
+    li.dropdown:hover ul {
+        display: flex;
+    }
+    nav li li a {
+        font-size: 1em;
+        background: none;
+        font-weight: 500;
+    }
+    nav li li a:hover {
+        font-size: 1em;
     }
     .start-wrapper{
         background-color: aqua;
@@ -174,6 +198,25 @@ article h3 a {
         background-size: cover;
         flex-direction: column;
         padding: 100px 0px;
+    }
+    .queens-app {
+        background-color: aqua;
+        background: url(images/Group9.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 120px 0px;
+        justify-content: center;
+        margin: 0px 0px;
+    }
+    .queens-app p {
+        font-size: 1.7em;
+        width: 50%;
+        padding-right: 30px;
+    }
+    .apply-link {
+        font-size: 2em;
+        background-size: contain;
+        padding: 30px 70px;
     }
     .start-text{
         text-align: center;
