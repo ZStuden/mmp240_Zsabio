@@ -83,11 +83,13 @@ h2 {
 }
 
 .start-wrapper {
-    background: url(images/Group3.svg);
+    background: url(images/Group30.svg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: auto;
+    width: 100%;
     padding: 50px 0px;
-    margin: 0px -5px;
+    margin: 20px 0px;
     text-align: center;
     display: flex;
     align-items: center;
