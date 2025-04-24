@@ -2,8 +2,8 @@
 body {
     font-family: Figtree;
     font-weight: 500;
-    background-color: rgb(32, 32, 32);
-    color: whitesmoke;
+    background-color: rgb(180, 180, 180);
+    color: rgb(44, 44, 44);
     margin: 15px;
 }
 
@@ -14,8 +14,10 @@ nav {
 
 h1 {
     font-size: 1em;
-    background-color: rgb(39, 31, 82);
+    background-color: rgb(97, 97, 97);
+    color: rgb(180, 180, 180);
     padding: 30px;
+    font-size: 1.6em;
 }
 
 h2 {
@@ -38,11 +40,11 @@ nav ul{
 nav li a {
     font-weight: 600;
     display: block;
-    background-color: rgb(118, 184, 162);
     text-decoration: none;
-    color: rgb(14, 75, 44);
+    color: rgb(37, 37, 37);
     padding: 0.5em 1em;
     border-bottom: solid 2px rgb(32, 32, 32);
+    font-size: 1.4em;
 }
 
 nav li li a {
