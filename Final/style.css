@@ -251,6 +251,17 @@ article h3 a {
         display: flex;
     }
 
+    nav li a {
+        background-color: #00000056;
+        margin: 0px 20px;
+        padding: 10px 25px;
+        border-radius: 20px;
+    }
+
+    a.program-button {
+        border: 2px solid #f1f1f199;
+    }
+
     nav li li a {
         font-size: 1em;
         background: none;
