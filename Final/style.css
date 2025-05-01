@@ -2,7 +2,7 @@ body {
     margin: 0px 5px 0px 5px;
     font-family: Manrope;
     padding: 0%;
-    background-color: #DDDDDD;
+    background-color: #141414;
 }
 
 header {
@@ -36,7 +36,7 @@ nav li li a {
     color: #ffff;
     font-weight: 300;
     font-size: .90em;
-    margin: 20px;
+    margin: 2px;
     padding: 10px 20px;
 }
 
@@ -52,6 +52,9 @@ li {
 
 li.dropdown ul {
     display: none;
+    background-color: #141414a4;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 li.dropdown:hover ul {
@@ -79,7 +82,7 @@ h2 {
 .dropdown {
     position: absolute;
     right: 15px;
-    top: 15px;
+    top: 0px;
 }
 
 .top-nav {
@@ -102,6 +105,11 @@ h2 {
     align-items: center;
 }
 
+.desktop-img {
+    display: none;
+    position: absolute;
+}
+
 .start-link {
     color: inherit;
     background: url(images/Rectangle4.svg);
@@ -118,7 +126,7 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     text-decoration: none;
-    padding: 70px 100px;
+    padding: 30px 70px;
 }
 
 .queens-app {
@@ -131,9 +139,17 @@ h2 {
     margin: 0px -5px;
 }
 
+.queen-img {
+    display: none;
+}
+
 .queens-app p {
     font-size: .9em;
     color: #D0D0D0;
+}
+
+.queens-app-width {
+    display: none;
 }
 
 .news-center {
@@ -146,7 +162,7 @@ article img {
 }
 
 article a {
-    color: rgb(0, 0, 0);
+    color: white;
 }
 
 .article-des {
@@ -163,6 +179,11 @@ article h3 a {
     text-align: center;
     font-size: .9em;
     margin: 0%;
+    color: white;
+}
+
+#img-news {
+    color: white;
 }
 
 .article-subtext {
@@ -171,10 +192,18 @@ article h3 a {
     font-weight: 400;
 }
 
+.news-center {
+    color: white;
+}
+
 @media (min-width: 1240px) {
     body {
         margin: 0%;
         padding: 0%;
+    }
+
+    .dropdown {
+        top: 15px;
     }
 
     .top-nav a {
@@ -184,6 +213,7 @@ article h3 a {
     .burger-icon {
         display: none;
     }
+    
 
     li.dropdown ul {
         display: block;
@@ -192,6 +222,9 @@ article h3 a {
         align-items: center;
         justify-content: space-evenly;
         margin: -22px 0px;
+        background-color: #14141400;
+        padding: 0px;
+        border-radius: 0px;
     }
 
     li.dropdown:hover ul {
@@ -202,6 +235,7 @@ article h3 a {
         font-size: 1em;
         background: none;
         font-weight: 500;
+        margin: 20px;
     }
 
     nav li li a:hover {
@@ -214,7 +248,11 @@ article h3 a {
         background-repeat: no-repeat;
         background-size: cover;
         flex-direction: column;
-        padding: 100px 0px;
+        padding: 200px 0px;
+    }
+
+    .desktop-img {
+        display: none;
     }
 
     .queens-app {
@@ -222,22 +260,42 @@ article h3 a {
         background: url(images/queens-back.png);
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 120px 0px;
+        padding: 120px 0px 120px 80px;
         justify-content: center;
         margin: 0px 0px;
     }
 
     .queens-app p {
         font-size: 1.7em;
-        width: 50%;
         padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .queens-app-text {
+        display: none;
+    }
+
+    .queens-app-width {
+        display: block;
+        font-size: 1.2em;
+        padding: 40px;
+    }
+
+    .queens-app-width a {
+        color: #5B66E3;
     }
 
     .apply-link {
         font-size: 2em;
         background-size: contain;
         padding: 30px 70px;
+        display: none;
     }
+
+    .queen-img {
+        display: flex;
+        padding-left: 30px;
+    }    
 
     .start-text {
         text-align: center;
@@ -246,6 +304,8 @@ article h3 a {
 
     .start-link {
         background-size: 100%;
+        font-weight: 500;
+        font-size: 2em;
     }
 
     main {
