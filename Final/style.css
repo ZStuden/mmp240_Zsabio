@@ -24,7 +24,7 @@ nav li a {
     text-decoration: none;
     color: #ffffff;
     padding: 0em 1em;
-    font-size: 2em;
+    font-size: 1.4em;
     text-align: center;
 }
 
@@ -58,14 +58,25 @@ li.dropdown ul {
     border-radius: 5px;
 }
 
+.dropdown-programs {
+    position: relative;
+}
+
 .dropper {
     display: none;
     background-color: #141414a4;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 1px;
+    border-radius: 10px;
     position: absolute;
-    z-index: 1000;
+    min-width: 100%;
+    
+}
 
+a.program-button {
+    border: 2px solid #f1f1f199;
+    text-align: center;
+    border-radius: 10px;
+    margin: 5px;
 }
 
 li.dropdown:hover ul {
@@ -85,9 +96,9 @@ form {
     color: #5B66E3;
     font-size: 1.8em;
     width: 50%;
-    text-align: left;
+    text-align: center;
     font-weight: 800;
-    padding-left: 15px;
+    /*padding-left: 15px;*/
 }
 
 h2 {
@@ -118,6 +129,7 @@ h2 {
     text-align: center;
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .desktop-img {
@@ -255,11 +267,14 @@ article h3 a {
         background-color: #00000056;
         margin: 0px 20px;
         padding: 10px 25px;
-        border-radius: 20px;
+        border-radius: 30px;
+        font-size: 2em;
     }
 
     a.program-button {
         border: 2px solid #f1f1f199;
+        width: 200px;
+        text-align: center;
     }
 
     nav li li a {
