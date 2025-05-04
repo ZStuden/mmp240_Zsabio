@@ -309,7 +309,7 @@ article h3 a {
 
     .start-wrapper {
         background-color: aqua;
-        background: url(images/blue-back-2.png);
+        background: url(images/gradient-background2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         flex-direction: column;
