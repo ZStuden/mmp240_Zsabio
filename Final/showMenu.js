@@ -6,3 +6,12 @@ function showMenu(){
         menu.style.display="none";
             }
         }
+
+function toggleDropper(id){
+    var dropper = document.getElementById(id);
+    if (dropper.style.display === "none" || dropper.style.display ==="") {
+        dropper.style.display = "block";
+    } else {
+        dropper.style.display ="none";
+    }
+}
