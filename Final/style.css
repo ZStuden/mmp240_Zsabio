@@ -104,7 +104,7 @@ form {
 
 .start-text {
     margin: 0%;
-    color: #5B66E3;
+    color: #e7e7e7;
     font-size: 1.8em;
     width: 50%;
     text-align: center;
@@ -150,11 +150,14 @@ h2 {
 
 .start-link {
     color: inherit;
-    background: url(images/Rectangle4.svg);
     background-position: center;
     background-repeat: no-repeat;
     text-decoration: none;
-    padding: 70px 100px;
+    padding: 10px 20px;
+    color: #e7e7e7;
+    background-color: #0a04425d;
+    margin-top: 40px;
+    border-radius: 30px;
 }
 
 .apply-link {
