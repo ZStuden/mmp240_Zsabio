@@ -88,6 +88,8 @@ a.program-button {
     text-align: center;
     border-radius: 10px;
     margin: 5px;
+    font-family: Marcellus SC;
+    font-weight: 300;
 }
 
 /* li.dropdown:hover ul {
@@ -107,8 +109,9 @@ form {
     color: #e7e7e7;
     font-size: 1.8em;
     width: 50%;
+    font-family: Marcellus SC;
     text-align: center;
-    font-weight: 800;
+    font-weight: 300;
     /*padding-left: 15px;*/
 }
 
@@ -242,26 +245,29 @@ article h3 a {
 }
 
 .programs-cards {
-    background: rgb(231, 231, 231);
     margin: 0px -5px;
 }
 
-.programs-cards:hover {
+.programs-cards a:hover {
     background: white;
 }
 
 .programs-cards a{
+    background: rgb(231, 231, 231);
     text-decoration: none;
     color: #141414;
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
 }
 
 .programs-cards a img {
     display: none;
-    padding-top: 10px;
+    margin-top: 10px;
+    margin-right: 20px;
     width: 100%;
     max-width: 300px;
+    border-radius: 5px;
 }
 
 .card-link {
@@ -301,15 +307,21 @@ article h3 a {
 }
 
 main {
-    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+/*     padding: 0px 90px 20px; */
+    justify-items: center;
 
 }
 
 footer{
-    color: white;
-    background: rgb(6, 13, 44);
+    /* color: white;
+    background: rgb(25, 55, 189);
     padding: 5px 0px;
     margin: 0px -5px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%; */
 }
 
 footer p {
@@ -393,14 +405,38 @@ footer p {
         font-size: 1em;
     }
 
-    .start-wrapper {
+    .dropper {
+        border: 2px solid rgba(255, 255, 255, 0.671);
+    }
+
+/*     .start-wrapper {
         background-color: aqua;
         background: url(images/gradient-background2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         flex-direction: column;
         padding: 200px 0px;
-    }
+    } */
+
+    .start-wrapper  {
+        flex-direction: column;
+        padding: 200px 0px;
+        background: linear-gradient(319deg,#7870f3,#2d29c0,#716bf0,#7a31e9);
+        background-size: 240% 240%;
+        animation: gradient-animation 8s ease infinite;
+      }
+      
+      @keyframes start-wrapper  {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
 
     .desktop-img {
         display: none;
@@ -485,16 +521,15 @@ footer p {
 
     .programs-cards a img {
         display: block;
-        padding-right: 20px;
     }
 
-    .programs-cards {
-        padding: 30px 50px;
-        margin: 40px 150px;
+    .programs-cards a {
         border-radius: 5px;
+        padding: 30px 50px;
+        margin: 40px 150px;       
     }
 
-    .programs-cards:hover {
+    .programs-cards a:hover {
         outline: 6px solid rgba(131, 131, 131, 0.452);
         transition: all 0.1s ease;
 
@@ -519,8 +554,20 @@ footer p {
         font-size: 1.1em;
     }
 
+    footer {
+        position: relative;
+    }
+
     footer p {
         padding-left: 10px;
         font-size: .8em;
+        margin: 0px 0px;
     }
+}
+
+@media (min-width: 340px) {
+    body {
+        margin: 0%;
+    }
+
 }
