@@ -90,13 +90,13 @@ a.program-button {
     margin: 5px;
 }
 
-li.dropdown:hover ul {
+/* li.dropdown:hover ul {
     display: block;
 }
 
 .dropdown-programs:hover .dropper {
     display: block;
-}
+} */
 
 form {
     padding: 10px 0px;
@@ -242,6 +242,11 @@ article h3 a {
 }
 
 .programs-cards {
+    background: rgb(231, 231, 231);
+    margin: 0px -5px;
+}
+
+.programs-cards:hover {
     background: white;
 }
 
@@ -276,7 +281,13 @@ article h3 a {
 }
 
 .titles {
-    padding-left: 20px;
+    padding-left: 10px;
+    text-decoration: none;
+    font-size: .9em;
+}
+
+.pro-body-texts {
+    padding: 0px 10px;
     text-decoration: none;
     font-size: .9em;
 }
@@ -287,6 +298,23 @@ article h3 a {
 
 #subtitles-bold {
     font-weight: 800;
+}
+
+main {
+    padding-bottom: 20px;
+
+}
+
+footer{
+    color: white;
+    background: rgb(6, 13, 44);
+    padding: 5px 0px;
+    margin: 0px -5px;
+}
+
+footer p {
+    padding-left: 5px;
+    font-size: .8em;
 }
 
 @media (min-width: 1240px) {
@@ -342,9 +370,16 @@ article h3 a {
     }
 
     a.program-button {
-        border: 2px solid #f1f1f199;
+        background: none;
+        border: none;
         width: 200px;
         text-align: center;
+    }
+
+    a.program-button:hover {
+        border-bottom: 3px solid white;
+        border-radius: 0px;
+        transition: all 0.1s ease;
     }
 
     nav li li a {
@@ -432,7 +467,7 @@ article h3 a {
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 0px 90px;
+        padding: 0px 90px 20px;
         justify-items: center;
     }
 
@@ -450,19 +485,42 @@ article h3 a {
 
     .programs-cards a img {
         display: block;
+        padding-right: 20px;
     }
 
     .programs-cards {
         padding: 30px 50px;
         margin: 40px 150px;
+        border-radius: 5px;
+    }
+
+    .programs-cards:hover {
+        outline: 6px solid rgba(131, 131, 131, 0.452);
+        transition: all 0.1s ease;
+
     }
 
     .pro-tags {
-        padding: 0px 300px;
+        /* padding: 0px 300px; */
+        padding-top: 20px;
         font-size: 1em;
+    }
+
+    .pro-tags p {
+        padding: 15px;
+        margin: 2px 35px;
     }
 
     #titles-bold {
         font-size: 1.2em;
+    }
+
+    .pro-body-texts {
+        font-size: 1.1em;
+    }
+
+    footer p {
+        padding-left: 10px;
+        font-size: .8em;
     }
 }
