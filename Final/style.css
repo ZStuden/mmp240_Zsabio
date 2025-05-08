@@ -43,6 +43,11 @@ nav li a {
     width: 40px;
 }
 
+input {
+    font-family: Manrope;
+    font-weight: 500;
+}
+
 nav li li a {
     background-color: rgba(49, 92, 74, 0.774);
     color: #ffff;
@@ -102,6 +107,7 @@ a.program-button {
 
 form {
     padding: 10px 0px;
+    border: none;
 }
 
 .start-text {
@@ -267,7 +273,9 @@ article h3 a {
     margin-right: 20px;
     width: 100%;
     max-width: 300px;
+    border: 2px solid rgba(0, 0, 0, 0.658);
     border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 16px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px !important;
 }
 
 .card-link {
@@ -342,6 +350,16 @@ footer p {
         border-radius: 5px;
         padding: 0px;
         position: relative;
+    }
+
+    form {
+        margin-top: 10px;
+    }
+
+    input {
+        height: 30px;
+        width: 200px;
+        color: #7c7c7c;
     }
 
     .dropdown {
