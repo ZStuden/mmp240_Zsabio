@@ -289,9 +289,13 @@ article h3 a {
 }
 
 .pro-tags p {
-    background-color: #a5a5a5;
+    /* background-color: #a5a5a5; */
     padding: 3px;
     border-radius: 3px;
+}
+
+.pro-tags p strong {
+    padding-right: 4px;
 }
 
 .titles {
@@ -306,13 +310,13 @@ article h3 a {
     font-size: .9em;
 }
 
-#titles-bold {
+/* .titles-bold {
     font-weight: 800;
-}
+} */
 
-#subtitles-bold {
+/* .subtitles-bold {
     font-weight: 800;
-}
+} */
 
 main {
     display: grid;
@@ -330,6 +334,47 @@ footer{
     position: absolute;
     bottom: 0px;
     width: 100%; */
+}
+
+.de-color-a {
+    background-color: #E4B87A;
+}
+
+.de-color-aA {
+    background-color: #B19062;
+}
+
+.di-color-a{
+    background-color: #7E6B8F;
+}
+
+.di-color-b{
+    background-color: #A3D9FF;
+}
+
+.di-color-c{
+    background-color: #F2E94E;
+}
+
+.bor-color-a{
+    background-color: #2E5077;
+    color: rgb(243, 243, 243);
+}
+
+.bor-color-b{
+    background-color: #4DA1A9;
+}
+
+.bor-color-c{
+    background-color: #611C35;
+}
+
+.bor-color-d{
+    background-color: #D7E8BA;
+}
+
+.bor-color-e{
+    background-color: #FFA630;
 }
 
 footer p {
@@ -564,7 +609,11 @@ footer p {
         margin: 2px 35px;
     }
 
-    #titles-bold {
+    .titles-bold {
+        font-size: 1.2em;
+    }
+
+    .titles {
         font-size: 1.2em;
     }
 
