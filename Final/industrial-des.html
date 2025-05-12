@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Marcellus+SC&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+
+
+        <span></span>
+
+        <nav class="top-nav">
+
+            <a href="index.html"><img src="images/CUNY.svg" alt=""></a>
+
+            <ul>
+                <li class="dropdown">
+
+                    <a href="#" class="burger-icon" onclick="showMenu()"><img src="images/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                            alt="burger-icon"></a>
+
+                    <ul id="topmenu">
+
+                        <li><a href="https://www.cuny.edu/about/">About Cuny</a></li>
+                        <li><a href="https://www.cuny.edu/financial-aid/">Financial AID</a></li>
+                        <li><a href="https://www.cuny.edu/admissions/apply-to-cuny/">Apply</a></li>
+                        <li>
+                            <form action="#"><input type="search" value="search"></form>
+                        </li>
+
+
+                    </ul>
+
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <nav class="start-wrapper">
+
+        <img class="desktop-img" src="images/lehman_College_Campus.jpg" alt="">
+
+        <h2 class="start-text">Find Design By Program</h2>
+
+        <ul class="programs">
+            <li class="dropdown-programs">
+
+                <a class="program-button" href="#" onclick="toggleDropper('degree-menu')">Degree</a>
+                
+                <ul class="dropper" id="degree-menu">
+                    <li><a href="associates.html">Associate</a></li>
+                    <li><a href="bachelors.html">Bachelor</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-programs">
+
+                <a class="program-button" href="#" onclick="toggleDropper('dis-menu')">Discipline</a>
+                
+                <ul class="dropper" id="dis-menu">
+                    <li><a href="digital-des.html">Digital Design</a></li>
+                    <li><a href="industrial-des.html">Industrial Design</a></li>
+                    <li><a href="animation-des.html">Animation</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-programs">
+
+                <a class="program-button" href="#" onclick="toggleDropper('bor-menu')">Borough</a>
+                
+                <ul class="dropper" id="bor-menu">
+                    <li><a href="Brooklyn.html">Brooklyn</a></li>
+                    <li><a href="manhatten.html">Manhatten</a></li>
+                    <li><a href="bronx.html">Bronx</a></li>
+                    <li><a href="queens.html">Queens</a></li>
+                    <li><a href="staten-island.html">Staten Island</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </nav>
+
+    <nav class="programs-cards">
+
+        <a href="https://www.laguardia.edu/majors/industrial-design/" target="_blank">
+
+            <div class="card-link">
+                <img src="images/la-img.jpg" alt="">
+
+                <div>
+                    <p class="titles titles-bold">LaGuardia Community College</p>
+                    <p class="titles subtitles-bold">Industrial Design</p>
+                    <p class="pro-body-texts">The Industrial Design program provides students a foundation experience in the necessary skills to begin a career in Computer Assisted Design (CAD), Model making, Product Design and Fabrication or transfer to a four-year institution.</p>
+                </div>
+    
+            </div>
+
+            <div class="pro-tags">
+                <p class="bor-color-d"><strong>Borough:</strong>Queens</p>
+                <p class="di-color-c"><strong>Discipline:</strong>Industrial Design</p>
+                <p class="de-color-aA"><strong>Degree:</strong>A.A.S.</p>
+            </div>
+
+        </a>
+
+        <a href="https://www.laguardia.edu/new-media-technology/" target="_blank">
+
+            <div class="card-link">
+                <img src="images/la-newM-img.jpg" alt="">
+
+                <div>
+                    <p class="titles titles-bold">LaGuardia Community College</p>
+                    <p class="titles subtitles-bold">New Media Technology</p>
+                    <p class="pro-body-texts">The New Media Technology major offers students the opportunity to work and experiment with some of the exciting technologies available today.
+                        Students develop a broad understanding of multimedia and Internet technologies in order to develop expertise in creating digital content.</p>
+                </div>
+    
+            </div>
+
+            <div class="pro-tags">
+                <p class="bor-color-d"><strong>Borough:</strong>Queens</p>
+                <p class="di-color-c"><strong>Discipline:</strong>Industrial Design</p>
+                <p class="de-color-aA"><strong>Degree:</strong>A.A.S.</p>
+            </div>
+
+        </a>
+
+        <a href="http://www.citytech.cuny.edu/mechanical/industrial-technology-aas.aspx" target="_blank">
+
+            <div class="card-link">
+                <img src="images/industrial_design.jpg" alt="">
+
+                <div>
+                    <p class="titles titles-bold">New York City College Of Technology</p>
+                    <p class="titles subtitles-bold">Industrial Design Technology</p>
+                    <p class="pro-body-texts">The Industrial Design Technology (IND) program is designed to provide students with a wide variety of skills enabling them to utilize a number of 2D, 3D and animation/simulation software packages in several diverse fields.</p>
+                </div>
+    
+            </div>
+
+            <div class="pro-tags">
+                <p class="bor-color-b"><strong>Borough:</strong>Brooklyn</p>
+                <p class="di-color-c"><strong>Discipline:</strong>Industrial Design</p>
+                <p class="de-color-aA"><strong>Degree:</strong>A.A.S.</p>
+            </div>
+
+        </a>
+
+        <a href="http://www.citytech.cuny.edu/communication-design/communication-design-aas.aspx" target="_blank">
+
+            <div class="card-link">
+                <img src="images/comd.jpg" alt="">
+
+                <div>
+                    <p class="titles titles-bold">New York City College Of Technology</p>
+                    <p class="titles subtitles-bold">Communication Design</p>
+                    <p class="pro-body-texts">The AAS degree program in Communication Design provides students with a solid foundation in the theory and practices of the Communication Design profession and a grounding in general education. Students explore visual expression through a range of courses in drawing, design and web design.</p>
+                </div>
+    
+            </div>
+
+            <div class="pro-tags">
+                <p class="bor-color-b"><strong>Borough:</strong>Brooklyn</p>
+                <p class="di-color-c"><strong>Discipline:</strong>Industrial Design</p>
+                <p class="de-color-aA"><strong>Degree:</strong>A.A.S.</p>
+            </div>
+
+        </a>
+
+        <a href="http://www.citytech.cuny.edu/communication-design/communication-design-bfa.aspx" target="_blank">
+
+            <div class="card-link">
+                <img src="images/comdmanage.jpg" alt="">
+
+                <div>
+                    <p class="titles titles-bold">New York City College Of Technology</p>
+                    <p class="titles subtitles-bold">Communication Design</p>
+                    <p class="pro-body-texts">The BFA degree develops students' abilities to frame, research and solve increasingly complex visual communication problems. Students develop a professional portfolio that  prepares them for employment as art directors, graphic designers, illustrators and web designers.</p>
+                </div>
+    
+            </div>
+
+            <div class="pro-tags">
+                <p class="bor-color-b"><strong>Borough:</strong>Brooklyn</p>
+                <p class="di-color-c"><strong>Discipline:</strong>Industrial Design</p>
+                <p class="de-color-bfa"><strong>Degree:</strong>B.F.A.</p>
+            </div>
+
+        </a>
+
+    </nav>
+
+    <footer>
+        <!-- <p>Designed and coded by Zen Sabio</p> -->
+    </footer>
+
+<script src="showMenu.js"></script>
+
+</body>
+
+</html>

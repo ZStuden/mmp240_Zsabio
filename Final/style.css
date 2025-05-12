@@ -310,6 +310,11 @@ article h3 a {
     font-size: .9em;
 }
 
+.label {
+    font-weight: bold;
+    margin-right: 4px;
+  }
+
 /* .titles-bold {
     font-weight: 800;
 } */
@@ -338,6 +343,22 @@ footer{
 
 .de-color-a {
     background-color: #E4B87A;
+}
+
+.de-color-aA {
+    background-color: #B19062;
+}
+
+.de-color-bfa {
+    background-color: #a2b162;
+}
+
+.de-color-bs {
+    background-color: #65b162;
+}
+
+.de-color-bA {
+    background-color: #62b183;
 }
 
 .de-color-aA {

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Marcellus+SC&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+
+
+        <span></span>
+
+        <nav class="top-nav">
+
+            <a href="index.html"><img src="images/CUNY.svg" alt=""></a>
+
+            <ul>
+                <li class="dropdown">
+
+                    <a href="#" class="burger-icon" onclick="showMenu()"><img src="images/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                            alt="burger-icon"></a>
+
+                    <ul id="topmenu">
+
+                        <li><a href="https://www.cuny.edu/about/">About Cuny</a></li>
+                        <li><a href="https://www.cuny.edu/financial-aid/">Financial AID</a></li>
+                        <li><a href="https://www.cuny.edu/admissions/apply-to-cuny/">Apply</a></li>
+                        <li>
+                            <form action="#"><input type="search" value="search"></form>
+                        </li>
+
+
+                    </ul>
+
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <nav class="start-wrapper">
+
+        <img class="desktop-img" src="images/lehman_College_Campus.jpg" alt="">
+
+        <h2 class="start-text">Find Design By Program</h2>
+
+        <ul class="programs">
+            <li class="dropdown-programs">
+
+                <a class="program-button" href="#" onclick="toggleDropper('degree-menu')">Degree</a>
+                
+                <ul class="dropper" id="degree-menu">
+                    <li><a href="associates.html">Associate</a></li>
+                    <li><a href="bachelors.html">Bachelor</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-programs">
+
+                <a class="program-button" href="#" onclick="toggleDropper('dis-menu')">Discipline</a>
+                
+                <ul class="dropper" id="dis-menu">
+                    <li><a href="digital-des.html">Digital Design</a></li>
+                    <li><a href="industrial-des.html">Industrial Design</a></li>
+                    <li><a href="animation-des.html">Animation</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-programs">
+
+                <a class="program-button" href="#" onclick="toggleDropper('bor-menu')">Borough</a>
+                
+                <ul class="dropper" id="bor-menu">
+                    <li><a href="Brooklyn.html">Brooklyn</a></li>
+                    <li><a href="manhatten.html">Manhatten</a></li>
+                    <li><a href="bronx.html">Bronx</a></li>
+                    <li><a href="queens.html">Queens</a></li>
+                    <li><a href="staten-island.html">Staten Island</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </nav>
+
+    <nav class="programs-cards">
+        <a href="http://www.bmcc.cuny.edu/media-arts/mmp_program.jsp" target="_blank">
+
+            <div class="card-link">
+                <img src="images/media-arts.jpg" alt="">
+
+                <div>
+                    <p class="titles" id="titles-bold">No Available Programs</p>
+                </div>
+    
+            </div>
+
+        </a>
+
+
+    </nav>
+
+    <footer>
+        <!-- <p>Designed and coded by Zen Sabio</p> -->
+    </footer>
+
+<script src="showMenu.js"></script>
+
+</body>
+
+</html>
