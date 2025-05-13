@@ -515,7 +515,6 @@
   
     const programList = new List('programs-list', options);
   
-    // Attach event listeners to dropdown <a> tags
     document.querySelectorAll('.dropper a').forEach(link => {
       link.addEventListener('click', function (e) {
         e.preventDefault();
@@ -523,7 +522,6 @@
         const type = this.dataset.filterType;
         const value = this.dataset.filter;
   
-        // Optional: visually mark the selected filter
         document.querySelectorAll('.dropper a').forEach(el => el.classList.remove('active'));
         this.classList.add('active');
   
