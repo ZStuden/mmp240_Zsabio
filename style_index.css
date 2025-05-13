@@ -67,6 +67,7 @@ li {
 
 li.dropdown ul {
     display: none;
+    position: absolute;
 }
 
 li.dropdown:hover ul {
@@ -82,18 +83,15 @@ li.dropdown:hover ul {
 }
 
 img {
-    width: 70%;
+    width: 300px;
 }
 
 .layout {
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: 1fr 1fr;
-    grid-row-gap: 2%;
-    grid-column-gap: 1em; 
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
 }
 
 .text-wrapper {
-    padding-top: 200px;
-    padding-left: 50px;
+
 }
