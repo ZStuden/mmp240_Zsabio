@@ -283,8 +283,8 @@ article h3 a {
     display: none;
     margin-top: 10px;
     margin-right: 20px;
-    width: 100%;
-    max-width: 300px;
+    width: 300px;
+    max-width: 100%;
     border: 2px solid rgba(0, 0, 0, 0.658);
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 16px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px !important;
