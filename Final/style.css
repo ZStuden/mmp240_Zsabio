@@ -141,9 +141,9 @@ h2 {
 }
 
 .start-wrapper {
-    background: url(images/blue-back-2.png);
-    background-position: center;
-    background-repeat: no-repeat;
+    background: linear-gradient(319deg,#7870f3,#2d29c0,#716bf0,#7a31e9);
+    background-size: 240% 240%;
+    animation: gradient-animation 8s ease infinite;
     padding: 50px 0px;
     margin: 20px -5px;
     text-align: center;
@@ -151,6 +151,18 @@ h2 {
     align-items: center;
     flex-direction: column;
 }
+
+  @keyframes start-wrapper  {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
 .desktop-img {
     display: none;
@@ -505,21 +517,6 @@ footer p {
     .start-wrapper  {
         flex-direction: column;
         padding: 200px 0px;
-        background: linear-gradient(319deg,#7870f3,#2d29c0,#716bf0,#7a31e9);
-        background-size: 240% 240%;
-        animation: gradient-animation 8s ease infinite;
-      }
-      
-      @keyframes start-wrapper  {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
       }
 
     .desktop-img {
