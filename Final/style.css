@@ -7,7 +7,6 @@ body {
 
 header {
     margin: 0px -5px;
-    padding: 15px 0px;
     background-color: #252533;
 }
 
@@ -137,7 +136,7 @@ h2 {
 .top-nav img {
     padding-left: 40px;
     padding-top: 20px;
-    width: 60px;
+    width: 40px;
 }
 
 .start-wrapper {
@@ -297,13 +296,15 @@ article h3 a {
 .pro-tags {
     display: flex;
     justify-content: space-around;
-    font-size: .8em;
+    font-size: .73em;
+    padding: 5px;
 }
 
 .pro-tags p {
     /* background-color: #a5a5a5; */
     padding: 3px;
     border-radius: 3px;
+    margin: 2px;
 }
 
 .pro-tags p strong {
@@ -327,9 +328,12 @@ article h3 a {
     margin-right: 4px;
   }
 
-/* .titles-bold {
+.titles-bold {
     font-weight: 800;
-} */
+    color: #223c5a;
+    font-size: 1em;
+    text-shadow: 1px 1px #00000048;
+} 
 
 /* .subtitles-bold {
     font-weight: 800;
@@ -345,7 +349,7 @@ main {
 
 .style-change {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin-bottom: 20px;
 }
 
@@ -442,6 +446,10 @@ footer p {
         border-radius: 5px;
         padding: 10px 0px;
         position: relative;
+    }
+
+    header {
+        padding: 15px 0px;
     }
 
     .top-nav img {

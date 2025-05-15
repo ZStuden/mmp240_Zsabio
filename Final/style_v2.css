@@ -7,7 +7,6 @@ body {
 
 header {
     margin: 0px -5px;
-    padding: 15px 0px;
     background-color: #252533;
 }
 
@@ -136,7 +135,7 @@ h2 {
 .top-nav img {
     padding-left: 40px;
     padding-top: 20px;
-    width: 60px;
+    width: 40px;
 }
 
 .start-wrapper {
@@ -281,9 +280,9 @@ article h3 a {
 
 .programs-cards a img {
     display: block;
-    margin-top: 10px;
-    margin-right: 20px;
-    width: 300px;
+/*     margin-top: 10px;
+    margin-right: 20px; */
+    width: 400px;
     max-width: 100%;
     border: 2px solid rgba(0, 0, 0, 0.658);
     border-radius: 5px;
@@ -330,9 +329,9 @@ article h3 a {
     margin-right: 4px;
   }
 
-/* .titles-bold {
+.titles-bold {
     font-weight: 800;
-} */
+} 
 
 /* .subtitles-bold {
     font-weight: 800;
@@ -348,7 +347,7 @@ main {
 
 .style-change {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin-bottom: 20px;
 }
 
@@ -448,6 +447,15 @@ footer p {
         padding: 0px;
         position: relative;
     }
+
+    header {
+        padding: 15px 0px;
+    }
+
+    .top-nav img {
+        width: 50px;
+    }
+
 
     form {
         margin-top: 10px;
