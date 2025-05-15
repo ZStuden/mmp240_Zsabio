@@ -343,6 +343,22 @@ main {
 
 }
 
+.style-change {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.style-change  button{
+    border: none;
+    margin: 10px;
+    padding: 10px;
+    font-family: Manrope;
+    background-color: #555555d9;
+    color: white;
+    border-radius: 3px;
+}
+
 footer{
     color: white;
     background: #252533;
@@ -586,6 +602,10 @@ footer p {
         justify-items: center;
     }
 
+    .style-change {
+        display: none;
+    }
+
     .article-des {
         width: 90%;
     }
@@ -651,7 +671,7 @@ footer p {
 
 @media (min-width: 340px) {
     body {
-        margin: 0%;
+        margin: 0% auto;
     }
 
 }

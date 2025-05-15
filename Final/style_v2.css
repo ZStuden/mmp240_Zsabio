@@ -8,9 +8,7 @@ body {
 header {
     margin: 0px -5px;
     padding: 15px 0px;
-    background: url(images/top-navbackground.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #252533;
 }
 
 nav ul {
@@ -138,6 +136,7 @@ h2 {
 .top-nav img {
     padding-left: 40px;
     padding-top: 20px;
+    width: 60px;
 }
 
 .start-wrapper {
@@ -277,6 +276,7 @@ article h3 a {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+    padding: 0px;
 }
 
 .programs-cards a img {
@@ -344,6 +344,22 @@ main {
 /*     padding: 0px 90px 20px; */
     justify-items: center;
 
+}
+
+.style-change {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.style-change  button{
+    border: none;
+    margin: 10px;
+    padding: 10px;
+    font-family: Manrope;
+    background-color: #555555d9;
+    color: white;
+    border-radius: 3px;
 }
 
 footer{
@@ -591,6 +607,10 @@ footer p {
         justify-items: center;
     }
 
+    .style-change {
+        display: none;
+    }
+
     .article-des {
         width: 90%;
     }
@@ -663,7 +683,7 @@ footer p {
 
 @media (min-width: 340px) {
     body {
-        margin: 0%;
+        margin: 0% auto;
     }
 
 }
