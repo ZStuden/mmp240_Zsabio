@@ -8,9 +8,7 @@ body {
 header {
     margin: 0px -5px;
     padding: 15px 0px;
-    background: url(images/top-navbackground.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #252533;
 }
 
 nav ul {
@@ -49,12 +47,13 @@ input {
 }
 
 nav li li a {
-    background-color: rgba(49, 92, 74, 0.774);
+    background-color: rgba(49, 92, 74, 0.945);
     color: #ffff;
-    font-weight: 300;
+    font-weight: 400;
     font-size: .90em;
     margin: 2px;
     padding: 10px 20px;
+    border-radius: 3px;
 }
 
 nav li li a:hover {
@@ -82,7 +81,7 @@ li.dropdown ul {
     display: none;
     background-color: #141414a4;
     padding: 1px;
-    border-radius: 10px;
+    border-radius: 5px;
     position: absolute;
     min-width: 100%;
     
@@ -138,6 +137,7 @@ h2 {
 .top-nav img {
     padding-left: 40px;
     padding-top: 20px;
+    width: 60px;
 }
 
 .start-wrapper {
@@ -344,13 +344,11 @@ main {
 }
 
 footer{
-    /* color: white;
-    background: rgb(25, 55, 189);
+    color: white;
+    background: #252533;
     padding: 5px 0px;
     margin: 0px -5px;
-    position: absolute;
     bottom: 0px;
-    width: 100%; */
 }
 
 .de-color-a {
@@ -426,12 +424,12 @@ footer p {
         display: flex;
         background: none;
         border-radius: 5px;
-        padding: 0px;
+        padding: 10px 0px;
         position: relative;
     }
 
-    form {
-        margin-top: 10px;
+    .top-nav img {
+        width: 50px;
     }
 
     input {
@@ -445,7 +443,7 @@ footer p {
     }
 
     .top-nav a {
-        padding-top: 20px;
+        padding: 20px;
     }
 
     .burger-icon {
