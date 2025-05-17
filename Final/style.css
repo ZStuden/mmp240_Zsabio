@@ -25,7 +25,8 @@ nav li a {
     text-align: center;
 }
 
-#topmenu {
+
+/* #topmenu {
     display: none;
     position: absolute;
     top: 100%; 
@@ -34,6 +35,31 @@ nav li a {
     padding: 10px;
     border-radius: 5px;
     z-index: 1000;
+} */
+
+#topmenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #141414a4;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+    transform: scaleY(0);
+    transform-origin: top;
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    pointer-events: none;
+}
+
+#topmenu.open {
+    transform: scaleY(1);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#topmenu-wide {
+    display: none;
 }
 
 .burger-icon img {
@@ -59,6 +85,7 @@ nav li li a:hover {
     background-color: rgba(92, 92, 170, 0.836);
     font-weight: 400;
     font-size: .98em;
+    transition: .2s ease-in;
 }
 
 li {
@@ -66,7 +93,6 @@ li {
 }
 
 li.dropdown ul {
-    display: none;
     background-color: #141414a4;
     padding: 10px;
     border-radius: 5px;
@@ -77,13 +103,23 @@ li.dropdown ul {
 }
 
 .dropper {
-    display: none;
     background-color: #141414a4;
     padding: 1px;
     border-radius: 5px;
     position: absolute;
     min-width: 100%;
-    
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+    pointer-events: none;
+
+}
+
+.dropper.open {
+    max-height: 500px;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 a.program-button {
@@ -140,7 +176,7 @@ h2 {
 }
 
 .start-wrapper {
-    background: linear-gradient(319deg,#7870f3,#2d29c0,#716bf0,#7a31e9);
+    background: linear-gradient(319deg, #7870f3, #2d29c0, #716bf0, #7a31e9);
     background-size: 240% 240%;
     animation: gradient-animation 8s ease infinite;
     padding: 50px 0px;
@@ -151,17 +187,19 @@ h2 {
     flex-direction: column;
 }
 
-  @keyframes start-wrapper  {
+@keyframes start-wrapper {
     0% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
+
     50% {
-      background-position: 100% 50%;
+        background-position: 100% 50%;
     }
+
     100% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
-  }
+}
 
 .desktop-img {
     display: none;
@@ -269,7 +307,7 @@ article h3 a {
     background: white;
 }
 
-.programs-cards a{
+.programs-cards a {
     background: rgb(231, 231, 231);
     text-decoration: none;
     color: #141414;
@@ -279,7 +317,8 @@ article h3 a {
 }
 
 .programs-cards a img {
-    display: none;
+    transform: scaleY(0);
+    position: absolute;
     margin-top: 10px;
     margin-right: 20px;
     width: 300px;
@@ -289,8 +328,30 @@ article h3 a {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 16px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px !important;
 }
 
+.alt-style .programs-cards a img {
+    transform: scaleY(1);
+    position: relative;
+    margin-top: 10px;
+    margin-right: 0px;
+    width: 400px;
+    max-width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.658);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 16px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px !important;
+    transition: width 0.2s ease;
+}
+
 .card-link {
     display: flex;
+}
+
+.alt-style .card-link {
+    display: flex;
+    flex-direction: column;
+    /* stack image above text */
+    align-items: center;
+    gap: 10px;
+    transition: width 0.5s ease;
 }
 
 .pro-tags {
@@ -326,14 +387,14 @@ article h3 a {
 .label {
     font-weight: bold;
     margin-right: 4px;
-  }
+}
 
 .titles-bold {
     font-weight: 800;
     color: #223c5a;
     font-size: 1em;
     text-shadow: 1px 1px #00000048;
-} 
+}
 
 /* .subtitles-bold {
     font-weight: 800;
@@ -342,7 +403,7 @@ article h3 a {
 main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-/*     padding: 0px 90px 20px; */
+    /*     padding: 0px 90px 20px; */
     justify-items: center;
 
 }
@@ -353,17 +414,19 @@ main {
     margin-bottom: 20px;
 }
 
-.style-change  button{
+.style-change button {
     border: none;
-    margin: 10px;
-    padding: 10px;
+    margin: 0px 10px;
+    padding: 15px;
     font-family: Manrope;
-    background-color: #555555d9;
-    color: white;
-    border-radius: 3px;
+    background: #a7ccedb6;
+    color: rgb(0, 0, 0);
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: .9em;
 }
 
-footer{
+footer {
     color: white;
     background: #252533;
     padding: 5px 0px;
@@ -395,36 +458,36 @@ footer{
     background-color: #B19062;
 }
 
-.di-color-a{
+.di-color-a {
     background-color: #7E6B8F;
 }
 
-.di-color-b{
+.di-color-b {
     background-color: #A3D9FF;
 }
 
-.di-color-c{
+.di-color-c {
     background-color: #F2E94E;
 }
 
-.bor-color-a{
+.bor-color-a {
     background-color: #2E5077;
     color: rgb(243, 243, 243);
 }
 
-.bor-color-b{
+.bor-color-b {
     background-color: #4DA1A9;
 }
 
-.bor-color-c{
+.bor-color-c {
     background-color: #611C35;
 }
 
-.bor-color-d{
+.bor-color-d {
     background-color: #D7E8BA;
 }
 
-.bor-color-e{
+.bor-color-e {
     background-color: #FFA630;
 }
 
@@ -440,12 +503,12 @@ footer p {
         overflow-x: hidden;
     }
 
-    #topmenu {
+    /*     #topmenu {
+        display: none;
+    } */
+
+    #topmenu-wide {
         display: flex;
-        background: none;
-        border-radius: 5px;
-        padding: 10px 0px;
-        position: relative;
     }
 
     header {
@@ -473,7 +536,7 @@ footer p {
     .burger-icon {
         display: none;
     }
-    
+
 
     li.dropdown ul {
         display: block;
@@ -527,7 +590,7 @@ footer p {
         border: 2px solid rgba(255, 255, 255, 0.671);
     }
 
-/*     .start-wrapper {
+    /*     .start-wrapper {
         background-color: aqua;
         background: url(images/gradient-background2.jpg);
         background-repeat: no-repeat;
@@ -536,10 +599,10 @@ footer p {
         padding: 200px 0px;
     } */
 
-    .start-wrapper  {
+    .start-wrapper {
         flex-direction: column;
         padding: 200px 0px;
-      }
+    }
 
     .desktop-img {
         display: none;
@@ -586,8 +649,8 @@ footer p {
         display: flex;
         padding-left: 30px;
     }
-    
-    .queen-img img{
+
+    .queen-img img {
         box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 16px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px !important;
         border-radius: 5px;
     }
@@ -628,12 +691,14 @@ footer p {
 
     .programs-cards a img {
         display: block;
+        position: relative;
+        transform: scaleY(1);
     }
 
     .programs-cards a {
         border-radius: 5px;
         padding: 30px 50px;
-        margin: 40px 150px;       
+        margin: 40px 150px;
     }
 
     .programs-cards a:hover {

@@ -25,7 +25,7 @@ nav li a {
     text-align: center;
 }
 
-#topmenu {
+/* #topmenu {
     display: none;
     position: absolute;
     top: 100%; 
@@ -34,6 +34,31 @@ nav li a {
     padding: 10px;
     border-radius: 5px;
     z-index: 1000;
+} */
+
+#topmenu {
+    position: absolute;
+    top: 100%; 
+    right: 0;
+    background-color: #141414a4;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+    transform: scaleY(0);
+    transform-origin: top;
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    pointer-events: none;
+}
+
+#topmenu.open {
+    transform: scaleY(1);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#topmenu-wide {
+    display: none;
 }
 
 .burger-icon img {
@@ -58,6 +83,7 @@ nav li li a:hover {
     background-color: rgba(92, 92, 170, 0.836);
     font-weight: 400;
     font-size: .98em;
+    transition: .2s ;
 }
 
 li {
@@ -65,7 +91,6 @@ li {
 }
 
 li.dropdown ul {
-    display: none;
     background-color: #141414a4;
     padding: 10px;
     border-radius: 5px;
@@ -76,13 +101,23 @@ li.dropdown ul {
 }
 
 .dropper {
-    display: none;
     background-color: #141414a4;
     padding: 1px;
-    border-radius: 10px;
+    border-radius: 5px;
     position: absolute;
     min-width: 100%;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+    pointer-events: none;
     
+}
+
+.dropper.open {
+    max-height: 500px;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 a.program-button {
