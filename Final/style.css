@@ -309,6 +309,7 @@ article h3 a {
     display: flex;
     padding-top: 90px;
     position: absolute;
+    bottom: 66%;
 }
 
 .programs-cards {
@@ -391,7 +392,7 @@ article h3 a {
 }
 
 .pro-body-texts {
-    padding: 0px 10px;
+    padding: 5px;
     text-decoration: none;
     font-size: .9em;
 }
@@ -732,6 +733,10 @@ footer p {
 
     section h2 {
         font-size: 2.2em;
+    }
+
+    .programs {
+        top: 40%;
     }
 
     .programs-cards a img {
