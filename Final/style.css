@@ -309,9 +309,6 @@ article h3 a {
     display: flex;
     padding-top: 90px;
     position: absolute;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
 }
 
 .programs-cards {
