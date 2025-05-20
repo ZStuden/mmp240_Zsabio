@@ -636,6 +636,13 @@ footer p {
 
     .queens-app-width a {
         color: #5B66E3;
+        text-decoration: none;
+    }
+
+    .queens-app-width a:hover {
+        font-weight: 600;
+        transition: .2s;
+        border-bottom: 3px solid #5B66E3;
     }
 
     .apply-link {
