@@ -612,6 +612,10 @@ footer p {
         padding: 100px 0px;
     }
 
+    .home_start {
+        padding: 200px 0px;
+    }
+
     .desktop-img {
         display: none;
     }
