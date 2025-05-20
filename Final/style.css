@@ -504,6 +504,10 @@ footer p {
     font-size: .8em;
 }
 
+.home_start {
+    padding: 0px;
+}
+
 @media (min-width: 1100px) {
     body {
         margin: 0%;
