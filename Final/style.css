@@ -640,9 +640,10 @@ footer p {
     }
 
     .queens-app-width a:hover {
+        color: #6774fa;
         font-weight: 600;
         transition: .2s;
-        border-bottom: 3px solid #5B66E3;
+        border-bottom: 3px solid #6774fa;
     }
 
     .apply-link {
