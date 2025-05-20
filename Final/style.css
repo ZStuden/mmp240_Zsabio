@@ -184,10 +184,10 @@ h2 {
 }
 
 .start-wrapper {
-    background: linear-gradient(319deg, #7870f3, #2d29c0, #716bf0, #7a31e9);
+    background: linear-gradient(319deg, #7870f3, #2d29c0, #716bf0, #6828c7);
     background-size: 240% 240%;
-    animation: gradient-animation 8s ease infinite;
-    padding: 50px 0px;
+    animation: gradient-animation 1s ease infinite;
+    padding: 50px 0px 30% 0px;
     margin: 20px -5px;
     text-align: center;
     display: flex;
@@ -305,6 +305,7 @@ article h3 a {
 .programs {
     display: flex;
     padding-top: 90px;
+    position: absolute;
 }
 
 .programs-cards {
@@ -579,12 +580,15 @@ footer p {
         border: none;
         width: 200px;
         text-align: center;
+        color: rgb(226, 226, 226);
     }
 
     a.program-button:hover {
         border-bottom: 3px solid white;
         border-radius: 0px;
+        color: white;
         transition: all 0.1s ease;
+        font-size: 2.2em;
     }
 
     nav li li a {
@@ -613,7 +617,7 @@ footer p {
 
     .start-wrapper {
         flex-direction: column;
-        padding: 100px 0px;
+        padding: 200px 0px 300px 0px;
     }
 
     .home_start {
@@ -631,7 +635,7 @@ footer p {
         background-size: cover;
         padding: 120px 0px 120px 80px;
         justify-content: center;
-        margin: 0px 0px;
+        margin: 0px -10px;
     }
 
     .queens-app p {
