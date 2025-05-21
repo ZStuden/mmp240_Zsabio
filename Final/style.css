@@ -1,15 +1,16 @@
 body {
-    margin: 0px 5px 0px 5px;
+    margin: 0 auto;
     font-family: Manrope;
-    padding: 0%;
+    padding: 0;
     background-color: #141414;
-    overflow-x: hidden;
     width: 100%;
+    max-width: 100%;
 }
 
 header {
-    margin: 0px -5px;
     background-color: #252533;
+    margin: 0 auto;
+    width: 100%;
 }
 
 nav ul {
@@ -189,12 +190,13 @@ h2 {
     background: linear-gradient(319deg, #7870f3, #2d29c0, #716bf0, #6828c7);
     background-size: 240% 240%;
     animation: gradient-animation 1s ease infinite;
-    padding: 50px 0px 30% 0px;
-    margin: 20px -5px;
-    text-align: center;
+    padding: 50px 20px;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 @keyframes start-wrapper {
@@ -260,18 +262,31 @@ h2 {
     display: none;
 }
 
-.news-center {
+section {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.events-texts {
+    padding-right: 100px;
+    padding-top: 10px;
 }
 
 article img {
-    max-width: 100%;
+    max-width: 90%;
 }
 
 article a {
     color: white;
-    padding-left: 10px;
 }
 
 .article-des {
@@ -296,7 +311,6 @@ article h3 a {
 }
 
 .article-subtext {
-    padding-left: 10px;
     font-size: .75em;
     font-weight: 400;
 }
@@ -307,8 +321,8 @@ article h3 a {
 
 .programs {
     display: flex;
+    flex-direction: row;
     padding-top: 90px;
-    position: absolute;
 }
 
 .programs-cards {
@@ -620,7 +634,7 @@ footer p {
 
     .start-wrapper {
         flex-direction: column;
-        padding: 200px 0px 300px 0px;
+        padding: 200px 0px;
     }
 
     .home_start {
@@ -682,8 +696,8 @@ footer p {
     }
 
     .queen-img img {
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 16px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px !important;
-        border-radius: 5px;
+        /*         box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 16px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px !important;
+        border-radius: 5px; */
     }
 
     .start-text {
@@ -698,8 +712,8 @@ footer p {
     }
 
     .browse-header {
-       padding-left: 150px;
-       text-align: left;
+        padding-left: 150px;
+        text-align: left;
 
     }
 
