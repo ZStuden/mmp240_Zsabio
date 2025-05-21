@@ -276,8 +276,8 @@ section {
     align-items: center;
 }
 
-.events-texts {
-    padding-right: 100px;
+.events-text {
+    padding-right: 70px;
     padding-top: 10px;
 }
 
@@ -293,6 +293,9 @@ article a {
     padding: 0px 10px;
 }
 
+article p {
+    font-size: .9em;
+}
 
 article h3 {
     padding: 0px 10px;
@@ -545,6 +548,10 @@ footer p {
         padding: 15px 0px;
     }
 
+    .top-nav {
+        padding-bottom: 0px;
+    }
+
     .top-nav img {
         width: 50px;
     }
@@ -634,7 +641,8 @@ footer p {
 
     .start-wrapper {
         flex-direction: column;
-        padding: 200px 0px;
+        padding: 130px 0px;
+        margin: 20px 0px;
     }
 
     .home_start {
@@ -646,13 +654,10 @@ footer p {
     }
 
     .queens-app {
-        background-color: aqua;
-        background: url(images/queens-back.png);
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 120px 0px 120px 80px;
         justify-content: center;
-        margin: 0px -10px;
+        margin: 0px ;
     }
 
     .queens-app p {
@@ -696,8 +701,10 @@ footer p {
     }
 
     .queen-img img {
-        /*         box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 16px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px !important;
-        border-radius: 5px; */
+        /*         box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 16px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px !important; */
+        border-radius: 5px; 
+        width: 90%;
+        max-width: 100%;
     }
 
     .start-text {
