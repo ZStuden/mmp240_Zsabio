@@ -8,7 +8,10 @@ body {
 }
 
 header {
-    background-color: #252533;
+    background: linear-gradient(319deg, #7870f3, #2d29c0, #716bf0, #6828c7);
+    background-size: 240% 240%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.603);
+    animation: gradient-animation 1s ease infinite;
     margin: 0 auto;
     width: 100%;
 }
@@ -75,13 +78,18 @@ input {
 }
 
 nav li li a {
-    background-color: rgba(49, 92, 74, 0.945);
-    color: #ffff;
+    color: #000000;
     font-weight: 400;
     font-size: .90em;
     margin: 2px;
     padding: 10px 20px;
-    border-radius: 3px;
+    border-bottom: 1px solid black;
+}
+
+.upper-dropdown li a{
+    color: white;
+    border-bottom: 1px solid white;
+
 }
 
 nav li li a:hover {
@@ -106,7 +114,7 @@ li.dropdown ul {
 }
 
 .dropper {
-    background-color: #141414a4;
+    background-color: #fdfdfd;
     padding: 1px;
     border-radius: 5px;
     position: absolute;
@@ -116,6 +124,8 @@ li.dropdown ul {
     overflow: hidden;
     transition: max-height 0.4s ease, opacity 0.3s ease;
     pointer-events: none;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 16px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px !important;
+
 
 }
 
@@ -130,7 +140,6 @@ a.program-button {
     text-align: center;
     border-radius: 10px;
     margin: 5px;
-    font-family: Marcellus SC;
     font-weight: 300;
 }
 
@@ -150,11 +159,11 @@ form {
 .start-text {
     margin: 0%;
     color: #e7e7e7;
-    font-size: 1.8em;
-    width: 50%;
-    font-family: Marcellus SC;
+    font-size: 2.8em;
+    font-family: Titan One;
     text-align: center;
     font-weight: 300;
+    text-shadow: 5px 2px 0px rgba(31, 31, 31, 0.94);
     /*padding-left: 15px;*/
 }
 
@@ -163,10 +172,9 @@ h2 {
 }
 
 .browse-header {
-    font-family: Marcellus SC;
     color: white;
     font-size: 2.8em;
-    font-weight: 300;
+    font-weight: 500;
     text-align: center;
 }
 
@@ -211,6 +219,11 @@ h2 {
     100% {
         background-position: 0% 50%;
     }
+}
+
+.start-wrapper img {
+    max-width: 100%;
+    z-index: 0;
 }
 
 .desktop-img {
@@ -562,6 +575,33 @@ footer p {
         color: #7c7c7c;
     }
 
+    .start-wrapper {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 130px 0px;
+        justify-items: center;
+        /* margin: 20px 0px; */
+    }
+
+    .index-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .start-text {
+        text-align: center;
+        font-size: 5em;
+        width: 500px;
+    }
+
+    .start-link {
+        background-size: 100%;
+        font-weight: 500;
+        font-size: 2em;
+    }
+
     .dropdown {
         top: 15px;
     }
@@ -591,11 +631,16 @@ footer p {
         display: flex;
     }
 
+    .upper-dropdown li a{
+    color: white;
+    border: none;
+
+}
+
     nav li a {
         background-color: #00000056;
         margin: 0px 20px;
         padding: 10px 25px;
-        border-radius: 30px;
         font-size: 2em;
     }
 
@@ -639,12 +684,6 @@ footer p {
         padding: 200px 0px;
     } */
 
-    .start-wrapper {
-        flex-direction: column;
-        padding: 130px 0px;
-        margin: 20px 0px;
-    }
-
     .home_start {
         padding: 200px 0px;
     }
@@ -657,7 +696,7 @@ footer p {
         background-repeat: no-repeat;
         background-size: cover;
         justify-content: center;
-        margin: 0px ;
+        margin: 0px;
     }
 
     .queens-app p {
@@ -702,20 +741,9 @@ footer p {
 
     .queen-img img {
         /*         box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 16px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px !important; */
-        border-radius: 5px; 
+        border-radius: 5px;
         width: 90%;
         max-width: 100%;
-    }
-
-    .start-text {
-        text-align: center;
-        font-size: 3em;
-    }
-
-    .start-link {
-        background-size: 100%;
-        font-weight: 500;
-        font-size: 2em;
     }
 
     .browse-header {
