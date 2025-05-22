@@ -256,9 +256,10 @@ h2 {
 .queens-app {
     display: flex;
     align-items: center;
-    background: url(images/queens-back.png);
+    background: url(images/quad_jefferson_hall.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
     padding: 30px 10px;
 }
 
@@ -696,7 +697,8 @@ footer p {
         background-repeat: no-repeat;
         background-size: cover;
         justify-content: center;
-        margin: 0px;
+        margin: 10px 0px;
+        padding: 8% 0px;
     }
 
     .queens-app p {
